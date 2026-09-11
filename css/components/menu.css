@@ -3,8 +3,8 @@
 @layer components {
   /* 1. ARCHITECTURE DESKTOP */
   .nav-menu {
-    --nav-bg: #ffffff;
-    --nav-text: #020263;
+    --nav-bg: #000000;
+    --nav-text: #ffffff;
     --nav-accent: #0066cc;
     --nav-focus-ring: #ffbf00;
 

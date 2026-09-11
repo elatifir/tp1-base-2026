@@ -5,7 +5,7 @@
 @import "components/menu.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
 :root {
     font-family: "Barlow", sans-serif;
     font-weight: 400;
@@ -26,3 +26,55 @@
   white-space: nowrap;
   border: 0;
 }
+
+.gras {
+    text-transform: uppercase;
+}
+
+.logo {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+    letter-spacing: 0.15em;
+}
+
+.header {
+    display:flex;
+    color: white;
+    align-items: center;
+    padding: .4em;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.barre_recherche-champ {
+    background-color: black;
+    border-radius: 20px;
+    padding: .5em 1em .5em;
+    background: transparent;
+    border: none;
+    
+}
+
+.barre_recherche-bouton {
+    background: transparent;
+    border: none;
+    padding-right: 1em;
+}
+
+.barre_recherche {
+    background-color:#1A1A1A;
+    border-radius: 20px;
+}
+
+.bouton_panier {
+    background: transparent;
+    border: none;
+    justify-content: unset;
+    margin-left: 1em;
+}
+
+.recherche {
+    display: flex;
+}
+
