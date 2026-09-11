@@ -6,7 +6,7 @@
     <title>Catalogue Chaussure</title>
     <meta name="description" content="Catalogue" />
     <script defer src="js/menu.js"></script>
-    <link rel="stylesheet" href="css/" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -49,10 +49,10 @@
         </ul>
       </nav>
       <div class="recherche">
-        <form class="barre_de_recherche" action="" method="GET" role="search">
-          <label for="recherche" class="screen-reader-only"></label>
-          <input type="search" placeholder="Rechercher"/>
-          <button type="submit" class="bouton_icon">
+        <form class="barre_recherche" action="" method="GET" role="search">
+          <label for="recherche-principale" class="sr-only"></label>
+          <input type="search" id="recherche-principale" name="q" class="barre_recherche-champ" placeholder="Rechercher"/>
+          <button type="submit" class="barre_recherche-bouton" aria-label="Lancer la recherche">
             <img src="images/Loupe.svg" alt="icon_rechrche" />
           </button>
         </form>
