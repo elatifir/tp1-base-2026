@@ -78,3 +78,11 @@
     display: flex;
 }
 
+.fil-dariane {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    color: #656D7A;
+    margin:.4em;
+    align-items: center;
+}
