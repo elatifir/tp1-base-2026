@@ -60,17 +60,12 @@
       </div>
     </header>
     <main class="contenu">
-      <div class="fil_dariane">
+      <nav aria-label="Fil d'Ariane" class="breadcrumb">
         <ul class="fil-dariane">
-          <li class="accueil">
-            <a href="#accueil" class="fil-dariane">Accueil</a>
-          </li>
-          <li class="fil-dariane symbole gras">&gt;</li>
-          <li class="chaussures">
-            <a href="#chaussures" class="fil-dariane">Chaussures</a>
-          </li>
+          <li><a class="fil-dariane" href="index.html" aria-current="page">Accueil &gt;</a></li>
+          <li><a class="fil-dariane" href="#chaussures">Chaussures</a></li>
         </ul>
-      </div>
+      </nav>
       <h1 class="titre gras">Chaussures</h1>
       <p class="texte">12 produits</p>
       <ul class="categories__list">
@@ -88,14 +83,14 @@
         </li>
       </ul>
       <div class="barre_trie">
-        <button class="filtres gras" name="filtres" value="Masquer les filtres">
-          <img src="images/filtre-icon.png" alt="icon_filtres" />
+        <button class="filtre gras" name="filtres" value="Masquer les filtres">
+          <img src="images/filtre-icon.png" class="filtre_image" alt="icon_filtres" />
           Masquer les filtres
         </button>
         <div class="trie">
-          <label for="pet-select">Trier par</label>
-          <select name="pets" id="pet-select">
-            <option value="">Nouveautés</option>
+          <label class="texte" for="pet-select">Trier par</label>
+          <select class="liste-deroulante" name="pets" id="pet-select">
+            <option class="liste-deroulante-texte" value="">Nouveautés</option>
           </select>
         </div>
       </div>

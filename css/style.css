@@ -11,6 +11,7 @@
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #F5F5F5;
 }
 
 /** Accessibilité*/
@@ -135,4 +136,37 @@
 .categorie:focus {
     background-color: black;
     color:white
+}
+
+.barre_trie {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+    
+}
+
+.filtre {
+    background: transparent;
+    border: none;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.16em;
+}
+
+
+.filtre_image {
+    width: 1em;
+    margin-right: .5em;
+}
+
+.liste-deroulante {
+    padding: .6em 1.4em .6em;
+    margin-left: .7em;
+    border-color: #e1e3e7;
+}
+
+.liste-deroulante {
+    padding-top: .5em;
 }
