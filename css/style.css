@@ -58,10 +58,25 @@
     
 }
 
+.barre_recherche-bouton:focus-visible {
+    outline: 3px solid #0056b3;
+    outline-offset: -1px;
+}
+
 .barre_recherche-bouton {
     background: transparent;
     border: none;
-    padding-right: 1em;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #656D7A;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.barre_recherche-bouton:hover {
+    background-color: #ffffff;
+    border-color: #000000;
 }
 
 .barre_recherche {
