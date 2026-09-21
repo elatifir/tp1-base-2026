@@ -169,6 +169,10 @@ button {
     
 }
 
+.fieldset {
+    border: none;
+}
+
 .filtre {
     background: transparent;
     border: none;
