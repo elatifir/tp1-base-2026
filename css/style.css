@@ -44,10 +44,18 @@
     display:flex;
     color: white;
     align-items: center;
-    padding: .4em;
+    padding-left:3em;
+    padding-right: 3em;
     justify-content: space-between;
     background-color: black;
     
+}
+
+@media (min-width: 64rem) {
+    .header {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 }
 
 button {
@@ -85,10 +93,9 @@ button {
 }
 
 .barre_recherche {
+    display:flex;
     background-color:#1A1A1A;
     border-radius: 40px;
-    display:flex;
-    
 }
 
 .bouton_panier {
@@ -100,7 +107,6 @@ button {
 
 .recherche {
     display: flex;
-
 }
 
 .contenu {
@@ -230,7 +236,6 @@ button {
 .sous-contenu {
     display: grid;
     grid-template-columns: 250px 1fr;
-    gap: 30px;
 }
 
 .filter-form {
@@ -239,11 +244,16 @@ button {
     height: fit-content;
 }
 
+
 .Chaussures {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    list-style: none;  
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.carte-chaussure {
+    background-color: white;
 }
 
 .nouveau {
@@ -259,11 +269,6 @@ button {
     top:0%;
 }
 
-.carte-chaussure {
-  flex: 1;
-  min-width:fit-content; 
-  background-color: white;
-}
 
 .image {
     position: relative;
@@ -283,6 +288,60 @@ button {
     font-weight: 500;
     font-style: normal;
 }
+
+@media (min-width: 64rem) {
+    .nom-chaussure{
+        font-size:1.3em;
+        
+    }
+}
+
+.carte-chaussure p {
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.carte-chaussure h2 {
+    margin-left: .7em;
+}
+@media (min-width: 70rem) {
+    .Chaussures {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        list-style: none;  
+    }
+}
+@media (min-width: 80rem) {
+
+    .Chaussures {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        list-style: none;  
+    }
+
+    .nouveau {
+        background-color: #000000;
+        color:white;
+        font-family: "Barlow", sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        font-style: normal;
+        padding: 9px 10px; 
+        display: inline-block;
+        position:absolute;
+        top:0%;
+    }
+
+    .carte-chaussure {
+      flex: 1;
+      min-width:fit-content;
+    }
+
+}
+
+
 .bouton_ajouter {
     color:#AFAFAF;
     background-color: white;
@@ -290,3 +349,53 @@ button {
     width:100%;
     padding:1em;
 }
+
+
+.pied_page {
+    background-color: #373636;
+    color:white;
+
+}
+
+.pied_page .logo {
+    text-align: center;
+    padding-top:2em;
+}
+
+.nav-pied_page__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3em;
+    padding-left:0;
+    gap: 1em;
+}
+
+.nav-pied_page__link {
+    text-decoration: none;
+    color:white;
+    letter-spacing: 0.15em;
+}
+
+.icones {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3em;
+    padding-left:0;
+    gap: 1em;
+}
+
+footer > p {
+    text-align: center;
+
+}
+
+.texte.milieu {
+    padding-bottom: 5em;
+}
+
+
+

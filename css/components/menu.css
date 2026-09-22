@@ -124,7 +124,7 @@
   }
 
   /* 3. CONFIGURATION RESPONSIVE ET MOBILE */
-  @media (width < 768px) {
+ @media (max-width: 80rem) {
     .nav-menu {
       position: relative;
 
