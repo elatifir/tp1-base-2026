@@ -133,7 +133,8 @@ button {
 
 .texte {
     color: #656D7A;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.3em;
 }
 
 .categories__list {
@@ -171,12 +172,22 @@ button {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em;
-    
+    padding: 1.5em 3.5em 1.5em;
+    margin-left: -3em;
+    margin-right: -3em;
 }
 
 .fieldset {
     border: none;
+    padding-top: 2.3em;
+    padding-right: 3em;
+}
+
+#filter-form input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+    border: 2px solid #878686;
 }
 
 .filtre {
@@ -212,8 +223,9 @@ button {
       /* Style des deux listes */
       .filter-list {
         list-style: none;
-        padding: 0;
-        margin: 0 0 20px 0;
+        padding-bottom: .6em;
+        border-bottom: 3px solid #e1e3e7;
+        padding-left: 0;
       }
 
       .filter-list li {
@@ -223,10 +235,13 @@ button {
       .section-title {
         font-weight: bold;
         font-size: 1.1em;
+        padding-bottom: 1em;
       }
 
       .list-option {
-        padding-left: 15px;
+        display: flex;
+        gap:.5em;
+        padding-bottom: 1em;
       }
 
       button {
@@ -236,6 +251,10 @@ button {
 .sous-contenu {
     display: grid;
     grid-template-columns: 250px 1fr;
+}
+
+.sous-contenu:has(#filter-form.is-hidden) .Catalogue {
+    grid-column: 1 / -1;
 }
 
 .filter-form {
@@ -249,6 +268,7 @@ button {
     list-style: none;
     display: flex;
     flex-direction: column;
+    padding-left:0;
     
 }
 
@@ -345,9 +365,44 @@ button {
 .bouton_ajouter {
     color:#AFAFAF;
     background-color: white;
-    border-color: #878686;
+    border: 2px solid #d7d6d6;
     width:100%;
     padding:1em;
+}
+
+.pagination-liste {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    gap:.7em;
+    padding:2em;
+}
+
+.liste {
+    background-color:#ffffff;
+    padding: 1em 1.4em 1em;
+    color: black;
+    border: 2px solid #d7d6d6;
+}
+
+.liste:hover {
+    background-color: black;
+    color:white
+}
+
+.liste:active {
+    background-color: black;
+    color:white
+}
+
+.liste:focus {
+    background-color: black;
+    color:white
+}
+
+.active {
+    background-color: #000000;
+    color:white;
 }
 
 
@@ -390,12 +445,13 @@ button {
 
 footer > p {
     text-align: center;
-
+    padding:0em 7em 0em;
 }
 
 .texte.milieu {
     padding-bottom: 5em;
 }
+
 
 
 
