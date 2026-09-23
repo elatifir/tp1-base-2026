@@ -412,9 +412,38 @@ button {
 
 }
 
+@media (min-width: 80rem) {
+    .pied_page {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left:3em;
+        align-items: baseline
+
+
+    }
+
+    .texte.milieu {
+        grid-column: -3/-1;
+        text-align: left;
+        padding-left:0;
+    }
+
+    .texte-gauche {
+        text-align: left;
+        padding-left:0;
+    }
+}
+
 .pied_page .logo {
     text-align: center;
-    padding-top:2em;
+    padding-top:3em;
+}
+
+@media (min-width: 80rem) {
+    .pied_page .logo {
+        text-align: left;
+        padding-left:0;
+    }
 }
 
 .nav-pied_page__list {
@@ -431,6 +460,14 @@ button {
     text-decoration: none;
     color:white;
     letter-spacing: 0.15em;
+}
+
+@media (min-width: 80em) {
+    .nav-pied_page__list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+    }
 }
 
 .icones {
@@ -452,6 +489,23 @@ footer > p {
     padding-bottom: 5em;
 }
 
+@media (min-width: 80rem) {
+    .section-top {
+        display:flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
 
+@media (min-width: 80rem) {
+    .section-bottom {
+        display: flex;
+        padding-left: 9em;
+        gap: 3em;
+    }
+}
 
-
+.texte-bas {
+    text-transform: lowercase;
+    color: #656D7A;
+}
